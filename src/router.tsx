@@ -5,6 +5,8 @@ import Global from "./modules/global";
 import GlobalLeft from "./modules/global/components/GlobalLeft";
 import GlobalRight from "./modules/global/components/GlobalRight";
 
+import Actions from "./modules/actions";
+
 const router = createBrowserRouter([
   { path: "/", element: <Home></Home> },
 
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
       { path: "right", element: <GlobalRight></GlobalRight> }
     ]
   },
+
+  { path: "/actions", element: <Actions></Actions> }
 ]);
 
 export default router;
