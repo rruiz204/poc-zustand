@@ -6,6 +6,7 @@ import GlobalLeft from "./modules/global/components/GlobalLeft";
 import GlobalRight from "./modules/global/components/GlobalRight";
 
 import Actions from "./modules/actions";
+import Slices from "./modules/slices";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home></Home> },
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
     ]
   },
 
-  { path: "/actions", element: <Actions></Actions> }
+  { path: "/actions", element: <Actions></Actions> },
+  { path: "/slices", element: <Slices></Slices> }
 ]);
 
 export default router;
